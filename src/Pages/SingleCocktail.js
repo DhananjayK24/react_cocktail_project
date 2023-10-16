@@ -60,7 +60,7 @@ const SingleCocktail = () => {
 
   useEffect(() => {
     fetchD();
-  }, [id]);
+  }, [fetchD, id]);
 
   if (loading) {
     return <Loading />;
